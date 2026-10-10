@@ -29,7 +29,7 @@ The above example looks no different than any vanilla spring-boot application. I
 and that is it. So, how does it become a spring-cloud-stream application?
 It becomes a spring-cloud-stream application simply because of the presence of spring-cloud-stream and binder dependencies
 and auto-configuration classes on the classpath, effectively setting the context for your boot application as a spring-cloud-stream application.
-And in this context beans of type `Supplier`, `Function` or `Consumer` are treated as defacto message handlers triggering
+And in this context beans of type `Supplier`, `Function` or `Consumer` are treated as default message handlers triggering
 binding of to destinations exposed by the provided binder following certain naming conventions and
 rules to avoid extra configuration.
 
